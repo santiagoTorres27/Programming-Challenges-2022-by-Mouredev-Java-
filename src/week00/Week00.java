@@ -1,6 +1,6 @@
-package week01;
+package week00;
 
-public class Week01 {
+public class Week00 {
 
     /*
      * Escribe un programa que muestre por consola (con un print) los
