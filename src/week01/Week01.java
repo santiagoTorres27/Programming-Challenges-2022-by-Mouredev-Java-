@@ -1,8 +1,8 @@
-package week02;
+package week01;
 
 import java.util.Arrays;
 
-public class Week02 {
+public class Week01 {
 
     /*
      * Escribe una función que reciba dos palabras (String) y retorne
