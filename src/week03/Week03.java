@@ -1,3 +1,5 @@
+package week03;
+
 public class Week03 {
 
     /*
