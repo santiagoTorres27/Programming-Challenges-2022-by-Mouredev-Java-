@@ -33,16 +33,19 @@ public class Week45 {
         int[] rightMax = new int[length];
         int trappedWater = 0;
 
+//      Check maximum height to the left of each position
         leftMax[0] = wall[0];
         for (int i = 1; i < length; i++) {
             leftMax[i] = Math.max(wall[i], leftMax[i - 1]);
         }
 
+//        Check maximum height to the right of each position
         rightMax[wall.length - 1] = wall[wall.length - 1];
         for (int i = wall.length - 2; i >= 0; i--) {
             rightMax[i] = Math.max(wall[i], rightMax[i + 1]);
         }
 
+//        Check trapped water in each position
         for (int i = 0; i < wall.length; i++) {
             trappedWater += Math.min(leftMax[i], rightMax[i]) - wall[i];
         }
